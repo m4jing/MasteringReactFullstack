@@ -1,22 +1,10 @@
-import mongoose from 'mongoose';
+import configMongoose from './configMongoose';
+import sessionRoutes from './routesSession';
 
-mongoose.Promise = global.Promise;
-// Fixed this: (node:76367) DeprecationWarning:
-// Mongoose: mpromise (mongoose's default promise library) is deprecated,
-// plug in your own promise library instead: http://mongoosejs.com/docs/promises.html
-
-mongoose.connect('mongodb://localhost/local', {
-  useMongoClient: true
-});
-
-const articleSchema = {
-  articleTitle: String,
-  articleContent: String
-}
-
-const Article = mongoose.model('Article', articleSchema, 'articles');
+const Article = configMongoose.Article;
 
 const PublishingAppRoutes = [
+  ...sessionRoutes,
   {
     route: 'articles.length',
     get: () => {
