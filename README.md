@@ -21,6 +21,7 @@ Please refer to: <https://docs.mongodb.com/manual/installation/#tutorial-install
 
 ```bash
 mongoimport --db local --collection articles --jsonArray initData.js --host=127.0.0.1
+mongoimport --db local --collection pubUsers --jsonArray initPubUsers.js --host=127.0.0.1
 ```
 
 3. Install dependencies

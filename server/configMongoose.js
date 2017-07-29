@@ -22,9 +22,21 @@ const articleSchema = {
   articleTitle: String,
   articleContent: String
 }
+const userSchema = {
+  username: String,
+  password: String,
+  firstName: String,
+  lastName: String,
+  email: String,
+  role: String,
+  verified: Boolean,
+  imageUrl: String
+};
 
 const Article = mongoose.model('Article', articleSchema, 'articles');
+const User = mongoose.model('User', userSchema, 'pubUsers');
 
 export default {
-  Article
+  Article,
+  User
 };

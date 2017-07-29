@@ -37,9 +37,9 @@ class PublishingApp extends Component {
 
     let articlesJSX = [];
 
-    for (let k in this.props) {
+    for (let k in this.props.article) {
       if (this.props.hasOwnProperty(k)) {
-        let articlesDetails = this.props[k];
+        let articlesDetails = this.props.article[k];
         let currentArticleJSX = (
           <div key={k}>
             <h2>- {articlesDetails.id}</h2>
