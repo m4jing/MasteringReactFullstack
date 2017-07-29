@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-// import { Link } from 'react-router';
 
 export default class CoreLayout extends Component {
   // static propTypes = {

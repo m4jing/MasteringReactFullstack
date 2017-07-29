@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import { BrowserRouter as Router } from 'react-router-dom';
-// import { Router } from 'react-router';
-import createHashHistory from 'history/es/createHashHistory';
+import createHashHistory from 'history/createHashHistory';
 
 import routes from '../routes';
 
