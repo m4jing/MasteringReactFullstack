@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { TextField } from 'material-ui';
 import { HOC } from 'formsy-react';
 

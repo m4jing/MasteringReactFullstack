@@ -10,6 +10,7 @@ An application using React full-stack technologies.
 * [Falcor](https://github.com/Netflix/falcor)
 * [MongoDB](https://www.mongodb.com/)
 * [Mongoose](http://mongoosejs.com/)
+* [Material-UI](http://www.material-ui.com/)
 
 ## 2. Prerequisites
 
