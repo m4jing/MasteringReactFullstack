@@ -1,8 +1,8 @@
 {
-  "name": "MasteringReactFullstack",
+  "name": "mastering-react-fullstack",
   "version": "1.0.0",
   "description": "An application for mastering react fullstack",
-  "main": "initData.js",
+  "main": "server/server.js",
   "scripts": {
     "dev": "webpack-dev-server",
     "webpack": "webpack --config ./webpack.config.js",
